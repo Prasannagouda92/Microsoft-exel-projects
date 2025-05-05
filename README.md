@@ -1,81 +1,30 @@
-# Microsoft-exel-projects
-Adding data to a worksheet
-Introduction
-By now, you should be familiar with techniques for adding data to Microsoft Excel and managing worksheets. In this exercise, you’ll put these new skills into practice by working with an Excel file. You’ll improve the readability of the data by formatting it and making structural changes to the worksheet itself. By completing this exercise, you’ll prove that you have the skills to prepare a file for submission to a colleague or manager.
+Welcome to my collection of Microsoft Excel Projects — designed to showcase my skills in data analysis, dashboard creation, and process automation using Excel’s powerful features like PivotTables, Charts, Formulas, and VBA Macros.
 
-Case study
-Renee, an Adventure Works executive based in the USA, has shared two files with you. The first is an Excel workbook called Sample.xlsx. The second is a PDF file called Exchange Rates.pdf. Your task is to add some data to the workbook file from the PDF and ensure it is correctly structured and formatted for readability.
-Excel User Interface 
-In this course, we use the Microsoft 365 Desktop version of Excel. Microsoft 365 releases updates monthly, incorporating new features. You might experience changes in the Excel Desktop User Interface (UI) that have taken place after the development of this training content. As a result, the screenshots in the videos, readings, or exercises might not align precisely with how you experience the UI. However, please note that these changes do not impact the functionalities of the UI. Therefore, you will still be capable of performing all the steps demonstrated in the videos, readings, and exercises.
+What you find here
+Interactive Dashboards
+Visually appealing, easy-to-use dashboards for tracking KPIs, sales performance, and project management metrics.
 
-Instructions
-Step 1: Download and open the required files
-Locate and download the file Sample.xlsx from the provided link.
+Data Analysis Projects
+From sales trend analysis to customer segmentation, using PivotTables, advanced formulas, and data cleaning techniques.
 
-Open the file in Microsoft Excel.
+Automated Reports
+Time-saving VBA Macro tools to automate repetitive tasks like report generation, data consolidation, and bulk emailing
 
-This file contains a sheet named Sheet1, which holds financial data. Another sheet named Contacts is included but will be used later.
+Why This Matters:
+Demonstrates practical problem-solving with Excel
+Highlights data visualization and reporting skills
+Shows ability to optimize workflow through automation
+Ready-to-use templates and tools for real-world business scenarios
 
-Workbook with Sheet1 and Contacts sheets. Content in Sheet1 displayed.
-Download the Exchange Rates PDF
+Featured Projects:
+Sales Performance Dashboard
+A dynamic dashboard to track monthly sales, regional trends, and top products.
 
-Locate and download the file Exchange Rates.pdf from the provided link.
+Employee Attendance Tracker
+Automated tracker with leave summaries, attendance patterns, and alerts.
 
-Save this file in a location where you can easily access it later.
+Expense Management Tool
+Simplified budgeting and expense categorization workbook for personal or business use.
 
-You will need this file in Step 4 to add exchange rate data to the Excel workbook.
-
-Step 2: Verify and correct the existing information in the sheet
-To begin, open Sheet1 in the Sample Excel file, then carry out the following tasks:
-
-The State Abbreviation column is unnecessary and can be deleted because the sheet contains international data. Select column B, then right-click and select Delete Columns from the shortcut menu.
-
-The entries in column D appear different than the other columns. This is because the column is too narrow. Position the mouse pointer on the vertical line between the D and E column identifiers, then double-click to resize the column automatically.
-
-The figures in the spreadsheet will be a key focus of the meeting, so you need to confirm that there are no other issues in the number range. The number in cell G18 is sitting over to the left of the cell, which indicates that Excel is treating the entry as text. The ~ character at the beginning of the entry is causing the problem, causing the entry to be auto-detected as text. Note: When a number is aligned to the left, it often means Excel is treating it as text. Removing any unnecessary symbols (e.g., ~) ensures Excel correctly recognizes it as a number. Double-click on cell G18 to enter Edit mode. Then move the cursor to the right of the character and press backspace. Press Enter to confirm the amendment and correctly realign the entry.
-
-Add a column to hold country data to display the worksheet’s international financial data. Add this new column to the right of the State column and fill in the country entries. Select the letter C that identifies the column to select it. Then right-click and choose Insert Columns from the shortcut menu. A new blank column appears to the left of the column titled Office Type.
-
-Type the heading Country in C1 and then USA in C2. Move the cursor back to C2, then hover the mouse pointer over the bottom right-hand corner until it becomes the narrow black cross. Hold down the mouse button and drag it down as far as row 21 to copy the entry quickly into the appropriate cells. Add Japan to C22 and use a similar Autofill technique to complete the country entries in rows 23 and 24. Add Germany to C25 and use a similar Autofill technique to complete the country entries in rows 26 and 27.
-
-Renee would like the information relating to Japan and Germany to be easily identifiable. So, she has asked you to add these country names as headings above both sets of information to create a clearer distinction between the data for these countries and the USA. First, select row 22 on the left-hand side. Then right-click and choose Insert Rows from the shortcut menu. Select row 26 and repeat the insert rows operation. Then type Japan in cell A22 and Germany in A26.
-
-Step 3: Format the data
-The worksheet now contains all the required information. Your next step is to improve its readability before presenting it to management.
-
-First, you need to emphasize the titles in row 1. Select the range of cells A1 to H1, and on the Home tab, select the Font group. Then choose font size 14 and a different background color. Without canceling the selection, center the headings. On the Home tab, select the Alignment group, then select the Center choice. 
-
-The heading Revenue in E1 and the Depreciation heading in H are only partially visible, as the columns are not wide enough to accommodate the text. Double-click on the vertical separator between E and F to automatically resize column E. Then perform a similar adjustment on column H.
-
-The titles in F1 and G1 are also exhibiting visibility issues. However, widening the columns would create too much visible white space. Instead, select F1 and G1. On the Home tab, select the Alignment group, then choose Wrap Text. 
-
-Column G still needs to be a little wider. So, hover the mouse pointer over the dividing line between the column letters G and H, hold down the mouse button, and drag it slightly to the right.
-
-The headings in the first row now stand out and are easier to read. You now need to emphasize the country headings in A22 and A26. Move the cursor to A1. On the Home tab, in the Clipboard group, select the Format Painter button and then select A22. Repeat the process for A26. Next, select cells B22 to H22 and apply the same background color. Repeat this process for cells B26 to H26.
-
-Next, you need to add currency formats to distinguish between the three currencies in the sheet. Select cells E2 to H21. On the Home tab in the Number group, select the currency drop-down and then choose the dollar symbol. However, this action generates extra characters and decimal places. So, column F needs to be resized a little.
-
-Select cells E25 to H27 and choose the Euro currency format from the Currency drop-down.
-
-Finally, select cells E23 to H25 and select the Currency drop-down again. There is no Japanese Yen choice offered in the immediate list. Since Japanese Yen does not appear in the immediate currency list, select 'More Accounting Formats,' then choose 'Currency' from the category list. In the Symbol drop-down, select '¥ Japanese (Japanese Yen)'.
-
-Step 4: Add new information to the workbook
-Now that you’ve improved the formatting and readability of the data in Sheet 1, you need to add the information from the Exchange Rates.pdf  file to the Microsoft Excel workbook.
-
-The information on exchange rates needs to be in the Excel file but held separately from the data you have just been working on. Create a new worksheet by selecting the + symbol in the worksheet tab area. 
-
-In cell A1 of the new sheet, type the heading USD Amount. In cell B1, type the heading Currency. In cell C1 type the heading Rate. In A2, type the number 1, and in B2 type Yen. In A3, type the number 1, and in B3 type Euro. Then, in C2 and C3, add the appropriate exchange rate figures from the PDF.
-
-To provide visual consistency between both sheets, format these headings to match the headings in Sheet1.
-
-Step 5: Manage the worksheets
-The workbook is now almost complete. In the last few steps, you must name and organize the worksheets you need for the presentation.
-
-The original worksheet that you edited is still called Sheet1. The sheet you added to hold the exchange rate information will also have a generic title of Sheet followed by a number. Both titles could be more descriptive. So, rename the first sheet Sample Figures, and the other sheet Exchange Rates. Right-click the relevant sheet tab, type the new names, and select OK. 
-
-To prepare for your presentation, it is best to position the Exchange Rates sheet to the right of the Sample Figures sheet. Point your cursor at the Exchange Rates tab, hold down the mouse button, and drag it to its new position.
-
-You don’t yet have all the required data for the Contacts sheet. In addition, this sheet is not directly relevant to your presentation. However, the information will be needed in the future. Rather than deleting it, you can hide it for the duration of the presentation. Select the sheet. On the Home tab in the Cells group, choose Format and then select Hide & Unhide to hide the sheet. To hide the Contacts sheet, go to Home > Cells group > Format > Hide & Unhide. 
-
-Conclusion
-You have now prepared the worksheet for your presentation by adding the required data and improving its readability. By completing this exercise, you have gained experience in editing a Microsoft Excel file and formatting it to a professional standard. As you worked through the steps, you used techniques that will be useful to you as you work with Excel.
+Macro-Enabled Invoice Generator
+One-click invoicing system using VBA Macros.
